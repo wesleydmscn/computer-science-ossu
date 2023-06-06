@@ -38,9 +38,9 @@
 `simple programs`
 `simple data structures`
 
-| Courses                                              | Duration |    Effort     | Prerequisites |             Discussion             |
-| :--------------------------------------------------- | :------: | :-----------: | :-----------: | :--------------------------------: |
-| [Python for Everybody](https://www.py4e.com/lessons) | 10 weeks | 10 hours/week |     none      | [chat](https://discord.gg/syA242Z) |
+| Courses                                              | Duration |    Effort     | Prerequisites |                                Issue                                |
+| :--------------------------------------------------- | :------: | :-----------: | :-----------: | :-----------------------------------------------------------------: |
+| [Python for Everybody](https://www.py4e.com/lessons) | 10 weeks | 10 hours/week |     none      | [#9](https://github.com/wesleydmscn/computer-science-ossu/issues/9) |
 
 ### [Introduction to Computer Science](https://github.com/wesleydmscn/computer-science-ossu/milestone/3)
 
@@ -50,9 +50,9 @@
 `basic data structures and algorithms`
 `and more`
 
-| Courses                                                                                                                                                                                                                                                          | Duration |    Effort     |                            Prerequisites                             |             Discussion             |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: | :-----------: | :------------------------------------------------------------------: | :--------------------------------: |
-| [Introduction to Computer Science and Programming using Python](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) ([alt](https://www.edx.org/course/introduction-to-computer-science-and-programming-7)) | 9 weeks  | 15 hours/week | [high school algebra](https://www.khanacademy.org/math/algebra-home) | [chat](https://discord.gg/jvchSm9) |
+| Courses                                                                                                                                                                                                                                                          | Duration |    Effort     |                            Prerequisites                             |                                 Issue                                 |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------: | :-----------: | :------------------------------------------------------------------: | :-------------------------------------------------------------------: |
+| [Introduction to Computer Science and Programming using Python](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/) ([alt](https://www.edx.org/course/introduction-to-computer-science-and-programming-7)) | 9 weeks  | 15 hours/week | [high school algebra](https://www.khanacademy.org/math/algebra-home) | [#10](https://github.com/wesleydmscn/computer-science-ossu/issues/10) |
 
 ## Core CS
 
