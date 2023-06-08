@@ -4,7 +4,7 @@ Lectures 6, 10, 11, and 12 have no associated questions.
 ## Topics
 
 1. [What is computation?](#what-is-computation)
-2. [Branching and Iteration](#topics)	
+2. [Branching and Iteration](#branching-and-iteration)	
 3. [String Manipulation, Guess and check, Approximations, Bisection](#topics)	
 4. [Decomposition, Abstractions, Functions](#topics)	
 5. [Tuples, Lists, Aliasing, Mutability, Cloning](#topics)	
@@ -50,3 +50,77 @@ print(total_gold)
 - [ ] 74 then 75
 - [ ] 74
 - [ ] 75
+
+### Branching and Iteration
+
+**1.** Strings - What is the value of variable `u` from the code below?
+```py
+once = "umbr"
+repeat = "ella"
+u = once + (repeat + " ") * 4
+```
+
+- [x] umbrella ella ella ella
+- [ ] umbrellaellaellaella
+- [ ] umbrella
+- [ ] umbrella4
+
+**2.** Comparisons - What does the code below print?
+```py
+pset_time = 15
+sleep_time = 8
+print(sleep_time > pset_time)
+derive = True
+drink = False
+both = drink and derive
+print(both)
+```
+
+- [x] False then False
+- [ ] False then True
+- [ ] True then False
+- [ ] True then True 
+
+**3.** Branching - What’s printed when x = 0 and y = 5?
+```py
+x = float(input("Enter a number for x: "))
+y = float(input("Enter a number for y: "))
+if x == y:
+ if y != 0:
+ print("x / y is", x/y)
+elif x < y:
+ print("x is smaller")
+else:
+ print("y is smaller") 
+```
+
+- [x] x is smaller
+- [ ] y is smaller
+- [ ] x / y is 0.0
+
+**4.** While Loops - In the code below from Lecture 2, what is printed when you type “Right”?
+```py
+n = input("You're in the Lost Forest. Go left or right? ")
+while n == "right":
+ n = input("You're in the Lost Forest. Go left or right? ")
+print("You got out of the Lost Forest!")
+```
+
+- [ ] You're in the Lost Forest. Go left or right?
+- [x] You got out of the Lost Forest!
+
+**5.** For Loops - What is printed when the below code is run?
+```py
+mysum = 0
+for i in range(5, 11, 2):
+ mysum += i
+ if mysum == 5:
+  break
+  mysum += 1
+print(mysum)
+```
+
+- [x] 5
+- [ ] 6
+- [ ] 21
+- [ ] 24
