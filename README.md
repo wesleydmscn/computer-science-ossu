@@ -23,7 +23,7 @@
 | [Integrated Math 2](https://www.khanacademy.org/math/math2#math2-subject-challenge)       |  13   | Integrated Math 1 |  [#5](https://github.com/wesleydmscn/computer-science-ossu/issues/5)  |
 | [Integrated Math 3](https://www.khanacademy.org/math/math3#math3-subject-challenge)       |  13   | Integrated Math 2 |  [#6](https://github.com/wesleydmscn/computer-science-ossu/issues/6)  |
 
-### [Hign school Physics](https://github.com/wesleydmscn/computer-science-ossu/milestone/2)
+### [High school Physics](https://github.com/wesleydmscn/computer-science-ossu/milestone/2)
 
 | Courses                                                                  | Units |             Prerequisites             |                                Issue                                |
 | :----------------------------------------------------------------------- | :---: | :-----------------------------------: | :-----------------------------------------------------------------: |
