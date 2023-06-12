@@ -3,14 +3,11 @@ Lectures 6, 10, 11, and 12 have no associated questions.
 
 ## Topics
 
-1. [What is computation?](#what-is-computation)
-2. [Branching and Iteration](#branching-and-iteration)	
-3. [String Manipulation, Guess and check, Approximations, Bisection](#topics)	
-4. [Decomposition, Abstractions, Functions](#topics)	
-5. [Tuples, Lists, Aliasing, Mutability, Cloning](#topics)	
-6. [Testing, Debugging, Exceptions, Assertions](#topics)	
-7. [Object Oriented Programming](#topics)	
-8. [Python Classes and Inheritance](#topics)	
+- [In-Class Questions](#in-class-questions)
+  - [Topics](#topics)
+    - [What is computation?](#what-is-computation)
+    - [Branching and Iteration](#branching-and-iteration)
+    - [String Manipulation, Guess and check, Approximations, Bisection](#string-manipulation-guess-and-check-approximations-bisection)
 
 ### What is computation?
 
@@ -124,3 +121,43 @@ print(mysum)
 - [ ] 6
 - [ ] 21
 - [ ] 24
+
+### String Manipulation, Guess and check, Approximations, Bisection
+
+**1.** String Manipulations - What does the code below print?
+```py
+s = "6.00 is 6.0001 and 6.0002"
+new_str = ""
+new_str += s[-1]
+new_str += s[0]
+new_str += s[4::30] 
+new_str += s[13:10:-1]
+print(new_str)
+```
+
+- [ ] 260000 
+- [ ] 26100
+- [x] 26 100
+- [ ] nothing, it will give an error
+- [ ] 6.00 is 6.0001 and 6.0002
+
+**2.** For Loops with Strings - How many times will the code below print “common letter”?
+```py
+s1 = "mit u rock"
+s2 = "i rule mit"
+if len(s1) == len(s2):
+ for char1 in s1:
+ for char2 in s2:
+ if char1 == char2:
+ print("common letter")
+ break
+```
+
+- [ ] 0
+- [ ] 2
+- [ ] 4
+- [ ] 5
+- [ ] 6
+- [x] 7
+- [ ] 8
+- [ ] 10 
