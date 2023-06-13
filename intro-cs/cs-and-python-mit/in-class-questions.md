@@ -8,6 +8,7 @@ Lectures 6, 10, 11, and 12 have no associated questions.
     - [What is computation?](#what-is-computation)
     - [Branching and Iteration](#branching-and-iteration)
     - [String Manipulation, Guess and check, Approximations, Bisection](#string-manipulation-guess-and-check-approximations-bisection)
+    - [Decomposition, Abstraction, and Functions](#decomposition-abstraction-and-functions)
 
 ### What is computation?
 
@@ -161,3 +162,42 @@ if len(s1) == len(s2):
 - [x] 7
 - [ ] 8
 - [ ] 10 
+
+### Decomposition, Abstraction, and Functions
+
+**1.** Function Calls - How many total lines of output will show up if you run the code below?
+```py
+def add(x, y):
+ return x+y
+
+def mult(x, y):
+ print(x*y)
+
+add(1,2)
+print(add(2,3))
+mult(3,4)
+print(mult(4,5))
+```
+
+- [ ] 0
+- [ ] 2
+- [x] 4
+- [ ] 5
+
+**2.** Functions as Arguments - What does the code below print?
+```py
+def sq(func, x):
+ y = x**2
+ return func(y)
+
+def f(x):
+ return x**2
+
+calc = sq(f, 2)
+print(calc)
+```
+
+- [ ] 4
+- [ ] 8
+- [x] 16
+- [ ] nothing, it will show an error
