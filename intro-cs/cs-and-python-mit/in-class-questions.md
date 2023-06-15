@@ -9,6 +9,7 @@ Lectures 6, 10, 11, and 12 have no associated questions.
     - [Branching and Iteration](#branching-and-iteration)
     - [String Manipulation, Guess and check, Approximations, Bisection](#string-manipulation-guess-and-check-approximations-bisection)
     - [Decomposition, Abstraction, and Functions](#decomposition-abstraction-and-functions)
+    - [Tuples, Lists, Aliasing, Mutability, and Cloning](#tuples-lists-aliasing-mutability-and-cloning)
 
 ### What is computation?
 
@@ -201,3 +202,65 @@ print(calc)
 - [ ] 8
 - [x] 16
 - [ ] nothing, it will show an error
+
+### Tuples, Lists, Aliasing, Mutability, and Cloning
+
+**1.** Tuples - Examine the code below. What does `always_sunny(('cloudy'), ('cold',))` evaluate to?
+```py
+def always_sunny(t1, t2):
+ """ t1, t2 are non empty """
+ sun = ("sunny","sun")
+ first = t1[0] + t2[0]
+ return (sun[0], first)
+```
+
+- [ ] ('sunny', 'cc')
+- [x] ('sunny', 'ccold')
+- [ ] ('sunny', 'cloudycold')
+
+**2.** Simple Lists - What is the value of L after you run the code below?
+```py
+L = ["life", "answer", 42, 0]
+for thing in L:
+ if thing == 0:
+  L[thing] = "universe"
+ elif thing == 42:
+  L[1] = "everything"
+```
+
+- [ ] ["life", "answer", 42, 0]
+- [ ] ["universe", "answer", 42, 0]
+- [x] ["universe", "everything", 42, 0]
+- [ ] ["life", "everything", 42, 0]
+ 
+**3.** List Operations - What is the value of L3 after you execute all the operations in the code below?
+```py
+L1 = ['re']
+L2 = ['mi']
+L3 = ['do']
+L4 = L1 + L2
+L3.extend(L4)
+L3.sort()
+del(L3[0])
+L3.append(['fa','la'])
+```
+
+- [x] ['mi', 're', ['fa', 'la']]
+- [ ] ['mi', 're', 'fa', 'la']
+- [ ] ['re', 'mi', ['fa', 'la']]
+- [ ] ['do', 'mi', ['fa', 'la']]
+
+**4.** List Aliasing/Mutation - What is the value of brunch after you execute all the operations in the code below?
+```py
+L1 = ["bacon", "eggs"]
+L2 = ["toast", "jam"]
+brunch = L1
+L1.append("juice")
+brunch.extend(L2)
+```
+
+- [ ] ['bacon', 'eggs', 'toast', 'jam']
+- [x] ['bacon', 'eggs', 'juice', 'toast', 'jam']
+- [ ] ['bacon', 'eggs', 'juice', ['toast', 'jam']]
+- [ ] ['bacon', 'eggs', ['toast', 'jam']]
+
