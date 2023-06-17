@@ -10,6 +10,7 @@ Lectures 6, 10, 11, and 12 have no associated questions.
     - [String Manipulation, Guess and check, Approximations, Bisection](#string-manipulation-guess-and-check-approximations-bisection)
     - [Decomposition, Abstraction, and Functions](#decomposition-abstraction-and-functions)
     - [Tuples, Lists, Aliasing, Mutability, and Cloning](#tuples-lists-aliasing-mutability-and-cloning)
+    - [Testing, Debugging, Exceptions, and Assertions](#testing-debugging-exceptions-and-assertions)
 
 ### What is computation?
 
@@ -264,3 +265,69 @@ brunch.extend(L2)
 - [ ] ['bacon', 'eggs', 'juice', ['toast', 'jam']]
 - [ ] ['bacon', 'eggs', ['toast', 'jam']]
 
+### Testing, Debugging, Exceptions, and Assertions
+
+**1.** Black Box and Glass Box Testing - With the below implementation, is the test set “n = 4 | n = -4 | n = 5” path complete?
+```py
+def is_even(n):
+ """ 
+ Returns True if a number is even
+ and False if not 
+ """
+ if n > 0 and n % 2 == 0:
+ return True
+ elif n < 0 and n % 2 == 0:
+ return True
+ else: 
+ return False
+```
+
+- [x] Yes
+- [ ] No
+
+With the above implementation, which value for n is incorrectly labeled by is_even?
+
+- [ ] n is very large (and positive) 
+- [ ] n is very small (and negative)   
+- [x] n is 0
+
+**2.** Errors - Below is a piece of code and an error shown when running it. What is the problem?
+```py
+L = 3
+for i in range(len(L)):
+ print(i)
+
+ERROR MESSAGE:
+
+ File "C:/Users/Ana/.spyder2-py3/temp.py", line 2, in 
+ for i in range(len(L)):
+
+TypeError: object of type 'int' has no len()
+```
+
+- [ ] You are not allowed to name an integer with the variable name L
+- [ ] range is not allowed to have an expression inside its parentheses
+- [x] You are not allowed to call len on an integer
+- [ ] You are not allowed to print the loop variable i 
+
+**3.** Exceptions - If the user enters “twenty” in the code below what does the program do?
+```py
+try:
+ n = int(input("How old are you? "))
+ percent = round(n*100/80, 1)
+ print("You've gone through", percent, "% of your life!")
+except ValueError:
+ print("Oops, must enter a number.")
+except ZeroDivisionError:
+ print("Division by zero.")
+except:
+ print("Something went very wrong.")
+```
+
+- [ ] prints "You've gone through 25.0 % of your life!" 
+- [x] prints "Oops, must enter a number."
+
+If the user enters “0” in the code above what does the program do?
+
+- [x] prints "You've gone through 0.0 % of your life!"
+- [ ] prints "Division by zero."
