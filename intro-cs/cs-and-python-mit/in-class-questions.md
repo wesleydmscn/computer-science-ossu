@@ -12,6 +12,7 @@ Lectures 6, 10, 11, and 12 have no associated questions.
     - [Tuples, Lists, Aliasing, Mutability, and Cloning](#tuples-lists-aliasing-mutability-and-cloning)
     - [Testing, Debugging, Exceptions, and Assertions](#testing-debugging-exceptions-and-assertions)
     - [Object Oriented Programming](#object-oriented-programming)
+    - [Python Classes and Inheritance](#python-classes-and-inheritance)
 
 ### What is computation?
 
@@ -413,3 +414,56 @@ print(mycar == yourcar)
 - [x] False
 - [ ] An error
 
+### Python Classes and Inheritance
+
+**1.** Getters and Setters - Which of the below is a getter method for the number of wheels?
+```py
+----------------------------------
+----------- Given ------------
+----------------------------------
+class Car(object):
+ def __init__(self, w, d):
+ self.wheels = w
+ self.doors = d
+ self.color = ""
+----------------------------------
+
+(A)    def get_wheels():
+ return wheels
+
+(B)    def get_wheels():
+ return self.wheels
+
+(C)    def get_wheels(self):
+ return wheels
+
+(D)    def get_wheels(self):
+ return self.wheels
+```
+
+- [ ] def get_wheels():
+- [ ] def get_wheels():
+- [ ] def get_wheels(self):
+- [x] def get_wheels(self):
+
+**2.** Subclass - Whate line could replace ____blank____ to create a class that inherets from Animal in the code below?
+```py
+____blank____
+ def speak(self):
+  print("ruff ruff")
+
+(line1) d = Dog(7)
+(line2) d.set_name("Ruffles")
+(line3) d.speak()
+```
+
+- [x] class Dog(Animal): 
+- [ ] class Animal(Dog): 
+- [ ] class Dog(object)
+
+With this definition of Dog, you run a program with line1, line2, and line3 above. What happens? Refer to the lecture slides for the code making up the “Animal” class.
+
+- [ ] Error on (line1) because Dog does not have an \_\_init\_\_ 
+- [ ] Uses the \_\_init\_\_ from Animal, but then an error (line2) because Dog does not have a set\_name method. 
+- [ ] Uses the \_\_init\_\_ and set\_name from Animal, but then an error (line3) because all methods must return something. 
+- [x] Runs, creates a Dog object with age=7 and name="Ruffles", and prints "ruff ruff" 
